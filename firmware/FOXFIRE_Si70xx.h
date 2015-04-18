@@ -1,7 +1,7 @@
 /****************************
  ****************************/
-#ifndef FOXFIRE_Si70xx_H
-#define FOXFIRE_Si70xx_H
+#ifndef _Si70xx_H_
+#define _Si70xx_H_
 
 #include "application.h"
 
