@@ -7,9 +7,9 @@ FOXFIRE_Si70xx::FOXFIRE_Si70xx()
 
 boolean FOXFIRE_Si70xx::begin(void)
 {
-	//Wire.begin();
-
-	return true;
+	Wire.begin();
+	Wire.beginTransmission(addrI2C);
+	return ( Wire.endTransmission(true) == 0 ? true : false );
 }
 
 float FOXFIRE_Si70xx::readTemperature(void)
