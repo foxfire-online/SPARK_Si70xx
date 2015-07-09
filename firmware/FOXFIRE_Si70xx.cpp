@@ -7,7 +7,7 @@ FOXFIRE_Si70xx::FOXFIRE_Si70xx()
 
 boolean FOXFIRE_Si70xx::begin(void)
 {
-	Wire.begin();
+	//Wire.begin();
 
 	return true;
 }
