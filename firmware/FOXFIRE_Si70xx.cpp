@@ -8,7 +8,7 @@ FOXFIRE_Si70xx::FOXFIRE_Si70xx()
 boolean FOXFIRE_Si70xx::begin(void)
 {
 	Wire.begin();
-	Wire.beginTransmission(addrI2C);
+	Wire.beginTransmission(_addr);
 	return ( Wire.endTransmission(true) == 0 ? true : false );
 }
 
