@@ -7,7 +7,10 @@ FOXFIRE_Si70xx::FOXFIRE_Si70xx()
 
 boolean FOXFIRE_Si70xx::begin(void)
 {
-	Wire.begin();
+	//Initialize the I2C bus if not already enabled
+	if (!Wire.isEnabled()) {
+		Wire.begin();
+	}
 	Wire.beginTransmission(_addr);
 	return ( Wire.endTransmission(true) == 0 ? true : false );
 }
